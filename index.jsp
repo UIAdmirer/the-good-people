@@ -1,0 +1,202 @@
+<%-- 
+    Document   : index
+    Created on : 1 Mar, 2015, 9:37:23 PM
+    Author     : Richa
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>The Good People</title>
+		<meta name="description" content="" />
+		<meta name="keywords" content="TheGoodPeople,TGP,the-good-people" />
+                <link rel="shortcut icon" href="images/favicon.jpg"/>
+                 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.scrolly.min.js"></script>
+		<script src="js/jquery.scrollzer.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+                <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+                <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+                
+                <noscript>
+                       
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-wide.css" />
+                        </noscript>
+		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+                <style>
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 100%;
+      height: 100%
+      
+  }
+  
+  </style>
+  <script type="text/javascript" src="js/chart.js"></script>
+   <script src="js/highcharts.js"></script>
+   <script src="js/exporting.js"></script>
+
+	</head>
+	<body>
+
+		<!-- Header -->
+			<div id="header" class="skel-layers-fixed">
+
+				<div class="home">
+
+					<!-- Logo -->
+						<div id="logo">
+                                                    <img src="images/wings_1.png" alt="TGP logo" />
+                                                    <h1 id="title">The Good People</h1>
+							
+							
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							
+							<ul>
+								<li><a href="#home" id="home-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Home</span></a></li>
+								<li><a href="#inspiring_stories" id="inspiring_stories-link" class="skel-layers-ignoreHref"><span class="icon fa-book">Inspiring Stories</span></a></li>
+								<li><a href="#rise" id="rise-link" class="skel-layers-ignoreHref"><span class="icon fa-line-chart">Rise of the Good</span></a></li>
+							</ul>
+						</nav>
+						
+				</div>
+				
+				<div class="bottom">
+
+					<!-- Social Icons -->
+						<ul class="icons">
+							<li><a href="#" class="icon fa-twitter"></a></li>
+							<li><a href="#" class="icon fa-facebook"></a></li>
+							<li><a href="#" class="icon fa-envelope"></a></li>
+						</ul>
+				
+				</div>
+			
+			</div>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- Home -->
+					<section id="home" class="two">
+
+                                                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                                                            <!-- Indicators -->
+                                                            <ol class="carousel-indicators">
+                                                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                                                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                                                            <li data-target="#myCarousel" data-slide-to="3"></li>
+                                                            </ol>
+
+                                                            <!-- Wrapper for slides -->
+                                                                <div class="carousel-inner" role="listbox">
+
+                                                                    <div class="item active">
+                                                                        <img src="images/pic05.jpg" alt="Chania">
+                                                                        <div class="carousel-caption">
+                                                                                        <h3>Chania</h3>
+          <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+        </div>
+      </div>
+
+      <div class="item">
+          <img src="images/pic05.jpg" alt="Chania">
+        <div class="carousel-caption">
+          <h3>Chania</h3>
+          <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+        </div>
+      </div>
+    
+      <div class="item">
+          <img src="images/pic05.jpg" alt="Flower">
+        <div class="carousel-caption">
+          <h3>Flowers</h3>
+          <p>Beatiful flowers in Kolymbari, Crete.</p>
+        </div>
+      </div>
+
+      <div class="item">
+          <img src="images/pic05.jpg" alt="Flower">
+        <div class="carousel-caption">
+          <h3>Flowers</h3>
+          <p>Beatiful flowers in Kolymbari, Crete.</p>
+        </div>
+      </div>
+  
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+                                                            
+                                                    
+	
+							
+							
+							<footer>
+                                                            <form name="pledge" action="NumberOfPledge" method="post">
+                                                            <button type="submit" class="button">Pledge to do good today!</button>
+                                                            
+                                                            </form>
+							</footer>
+
+						
+					</section>
+					
+				
+				<!-- Inspiring Stories -->
+					<section id="inspiring_stories" class="two">
+						<div class="container">
+
+							<header>
+								<h2>Inspiring Stories</h2>
+							</header>
+
+						</div>
+					</section>
+			
+				<!-- Rise of the Good -->
+					<section id="rise" class="two">
+						<div class="container">
+
+							<header>
+								<h2>Rise of the Good</h2>
+							</header>
+                                                    
+                                   <div id="rg"></div>                 
+							
+						</div>
+					</section>
+			
+			</div>
+
+		<!-- Footer -->
+			<div id="footer">
+				
+				<!-- Copyright -->
+					<ul class="copyright">
+						<li>&copy2015 The Good People. All rights reserved.</li><li>Design: TheUIAdmirer</li>
+					</ul>
+				
+			</div>
+
+	</body>
+</html>
